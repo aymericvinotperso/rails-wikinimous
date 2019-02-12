@@ -1,0 +1,17 @@
+.article-title {
+  font-weight: bolder;
+  color: blue;
+  font-size: 20px;
+}
+
+.article-title > a {
+  text-decoration: none;
+}
+
+.article-container {
+  padding:25px;
+}
+
+.custom-container{
+  padding-top: 25px;
+}

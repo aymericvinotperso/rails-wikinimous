@@ -1,0 +1,11 @@
+<h2>All articles</h2>
+
+  <% @articles.reverse.each do |article| %>
+  <div class="article-container">
+    <p class="article-title"> <%= link_to(article.title, article_path(article)) %> </p>
+    <span class="article-content"> <%= "#{article.content.first(50)}..." %> </span>
+  </div>
+  <% end %>
+
+  <%= link_to('Create a new article', new_article_path ) %>
+</p>
